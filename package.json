@@ -1,0 +1,17 @@
+{
+  "name": "durable-agent-runner",
+  "version": "1.0.0",
+  "description": "Resumable AI-agent runtime in TypeScript: journaled steps, retries, sandboxed tools and an eval harness",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test \"dist/test/*.test.js\"",
+    "demo": "tsc && node dist/src/cli.js evals",
+    "demo:resume": "tsc && node dist/src/cli.js resume"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
